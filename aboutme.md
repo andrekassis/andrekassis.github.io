@@ -1,16 +1,9 @@
----
-layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
----
+# Me... #
+-------------------------------------------------------
 
-My name is Inigo Montoya. I have the following qualities:
+Currently serving my sentence as a PhD student, but other than that:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- I love music and and play several instruments
+- When I'm not working (rarely ever happens) you'd probably find me at the beach
+- Fully trilingual, which unfortuantely only makes me even more addicted to TV shows in all three languages
+- The two women in my life (my mon and my wife) both think I'm tolerable, so I must be doing something right...
