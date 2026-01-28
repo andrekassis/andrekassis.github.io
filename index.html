@@ -95,8 +95,30 @@
       margin-bottom: 0;
     }
 
-    .name-title {
+    .header-top {
+      display: flex;
+      gap: 1.75rem;
+      align-items: flex-start;
       margin-bottom: 1.5rem;
+    }
+
+    .profile-photo {
+      flex-shrink: 0;
+      width: 140px;
+      height: 140px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .header-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .name-title {
+      margin-bottom: 0.75rem;
     }
 
     .name-title h1 {
@@ -112,6 +134,17 @@
       color: var(--text-medium);
       font-weight: 400;
       margin: 0;
+    }
+
+    .header-bio {
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .header-bio a {
+      font-weight: 500;
     }
 
     /* Bio paragraphs */
@@ -506,17 +539,38 @@
         font-size: 14px;
       }
 
+      .header-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .profile-photo {
+        width: 120px;
+        height: 120px;
+      }
+
+      .header-bio {
+        text-align: justify;
+      }
+
       .name-title h1 {
         font-size: 1.65rem;
       }
 
       .quick-links {
         gap: 0.4rem;
+        justify-content: center;
       }
 
       .quick-links a {
         padding: 0.35rem 0.7rem;
         font-size: 0.8rem;
+      }
+
+      .contact-line {
+        text-align: center;
       }
 
       .news-item {
@@ -576,6 +630,11 @@
       .site-footer {
         display: none;
       }
+
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
@@ -585,15 +644,19 @@
 
   <!-- Header & Bio -->
   <header class="profile-header">
-    <div class="name-title">
-      <h1>Andre Kassis</h1>
-      <p class="tagline">Ph.D. Candidate in Computer Science, University of Waterloo</p>
+    <div class="header-top">
+      <img src="photo.jpg" alt="Andre Kassis" class="profile-photo">
+      <div class="header-info">
+        <div class="name-title">
+          <h1>Andre Kassis</h1>
+          <p class="tagline">Ph.D. Candidate in Computer Science, University of Waterloo</p>
+        </div>
+        <p class="header-bio">I am a Ph.D. candidate at the <a href="https://uwaterloo.ca/">University of Waterloo</a>, advised by <a href="https://cs.uwaterloo.ca/~uhengart/">Prof. Urs Hengartner</a>, and a member of the <a href="https://crysp.uwaterloo.ca/">CrySP</a> Lab. My research focuses on machine learning security and adversarial robustness. Previously, I earned my B.Sc. in Computer Engineering <i>summa cum laude</i> from the <a href="https://www.technion.ac.il/en/">Technion</a>.</p>
+      </div>
     </div>
 
     <div class="bio-section">
-      <p class="bio-text">I am a Ph.D. candidate in Computer Science at the <a href="https://uwaterloo.ca/">University of Waterloo</a>, advised by <a href="https://cs.uwaterloo.ca/~uhengart/">Prof. Urs Hengartner</a>, and a member of the Cryptography, Security, and Privacy (<a href="https://crysp.uwaterloo.ca/">CrySP</a>) Lab. Previously, I earned my B.Sc. in Computer Engineering <i>summa cum laude</i> from the <a href="https://www.technion.ac.il/en/">Technion – Israel Institute of Technology</a>.</p>
-
-      <p class="bio-text">My research focuses on machine learning security and robustness. I use adversarial analysis as a principled tool grounded in structural reasoning and mathematical insight to probe the robustness limits of ML systems, with the goal of understanding failure modes and guiding the design and evaluation of mitigations that remain trustworthy under real-world constraints. More broadly, my research aims to help bridge the gap between theoretical assurances and practical security in deployed systems.</p>
+      <p class="bio-text">I use adversarial analysis as a principled tool grounded in structural reasoning and mathematical insight to probe the robustness limits of ML systems, with the goal of understanding failure modes and guiding the design and evaluation of mitigations that remain trustworthy under real-world constraints. More broadly, my research aims to help bridge the gap between theoretical assurances and practical security in deployed systems.</p>
 
       <p class="bio-text">I am currently interested in generative AI and large language models, particularly questions of scalable and adaptive red-teaming, safety, reliability, and privacy in modern ML systems.</p>
 
@@ -631,7 +694,7 @@
     <ul class="news-list">
       <li class="news-item">
         <span class="news-date">12/2025</span>
-        <span class="news-text">UnMarker became the University of Waterloo's second most covered research story of the year by earned media.</span>
+        <span class="news-text">UnMarker became the University of Waterloo's second most covered research story to date by earned media.</span>
       </li>
       <li class="news-item">
         <span class="news-date">09/2025</span>
